@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "DIN Bold";
+    src: url("../font/DIN-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'Yu Gothic Medium';
+    src: url('../font/Yu Gothic Medium.otf') format("opentype");
+}
+@font-face {
+    font-family: "RyoGothicPlusN-Reegular";
+    src: url("../font/RyoGothicPlusN-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "RyoGothicPlusN-Medium";
+    src: url("../font/RyoGothicPlusN-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "RyoGothicPlusN-Bold";
+    src: url("../font/RyoGothicPlusN-Bold.otf") format("opentype");
+}
+
+* {
+    font-family: "りょうゴシック PlusN", "RyoGothicPlusN-Reegular", "Noto Sans", "Arial", sans-serif;
+}
+p {
+    margin: 0;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        max-width: 1600px;
+        margin: auto;
+    }
+}
+
+.header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-nav a {
+    height: 48px;
+    height: 6.4vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header-nav img {
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .header-nav a {
+        height: 34.307px;
+        width: 129.023px;
+    }
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+}
+
+.cover-img {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 440px;
+    left: 50%;
+    object-fit: cover;
+    object-position: 65% 50%;
+    transform: translate(-50%);  
+}
+
+.title {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 40px;
+    padding-top: 80px;
+    color: #2B4A7E;
+}
+
+.title-one {
+    font-family: "RyoGothicPlusN-Reegular";
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.title-two {
+    font-family: "RyoGothicPlusN-Medium";
+    font-size: 69px;
+    line-height: 79px;
+}
+
+.title-three {
+    font-family: "RyoGothicPlusN-Bold";
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.title-four {
+    font-family: "RyoGothicPlusN-Bold";
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 100%;
+}
