@@ -19,116 +19,301 @@
     src: url("../font/RyoGothicPlusN-Bold.otf") format("opentype");
 }
 
-* {
-    font-family: "りょうゴシック PlusN", "RyoGothicPlusN-Reegular", "Noto Sans", "Arial", sans-serif;
+/* Initial Style Start */
+body {
+    margin: 0;
 }
 p {
     margin: 0;
 }
-
-.main {
-    position: relative;
-    overflow: hidden;
-    margin: auto;
+.pc-item {
+    display: none !important;
 }
 
 @media screen and (min-width: 768px) {
-    .main {
-        max-width: 1600px;
-        margin: auto;
+    .pc-item {
+        display: block !important;
     }
 }
+.sp-item {
+    display: block !important;
+}
+@media screen and (min-width: 768px) {
+    .sp-item {
+        display: none !important;
+    }
+}
+/* Initial Style End */
 
+/* Main Body Start */
+.main {
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .main {
+        margin: auto;
+        max-width: 1600px;
+    }
+}
+/* Main Body End */
+
+/* Header Section Start */
 .header-nav {
+    display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    max-width: 1000px;
-    height: 100px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    height: 14vw;
+    max-width: 1000px;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
-
-.header-nav a {
-    height: 48px;
-    height: 6.4vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
 .header-nav img {
-    height: 100%;
+    height: 6vw;
 }
 
 @media screen and (min-width: 768px) {
     .header-nav {
+        display: flex;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        max-width: 1000px;
-        height: 100px;
         margin: 0 auto;
+        height: 100px;
+        max-width: 1000px;
     }
-
-    .header-nav a {
-        height: 34.307px;
-        width: 129.023px;
+    .header-nav img {
+        height: 34px;
+        width: 126px;
     }
 }
+/* Header Section End */
 
+/* Cover Section Start */
 .cover {
     position: relative;
     width: 100%;
 }
-
-.cover-img {
-    display: block;
+.cover-img-pc {
+    display: none;
+}
+.cover-img-sp {
+    display: block !important;
     position: absolute;
     z-index: -1;
-    height: 440px;
-    left: 50%;
-    object-fit: cover;
-    object-position: 65% 50%;
-    transform: translate(-50%);  
+    width: 100%;
 }
 
 .title {
-    max-width: 1000px;
+    
     margin: auto;
-    padding-left: 40px;
-    padding-top: 80px;
+    padding-top: 32px;
+    padding-left: 20px;
     color: #2B4A7E;
-}
-
-.title-one {
     font-family: "RyoGothicPlusN-Reegular";
-    font-size: 24px;
-    line-height: 34px;
 }
-
+.title-one {
+    font-size: 4vw;
+}
 .title-two {
-    font-family: "RyoGothicPlusN-Medium";
-    font-size: 69px;
-    line-height: 79px;
+    font-size: 9.2vw;
+    line-height: 12vw;
 }
-
 .title-three {
-    font-family: "RyoGothicPlusN-Bold";
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 10.667vw;
+    line-height: 10vw;
+}
+.title-four {
+    font-size: 5.067vw;
+    line-height: 8vw;
 }
 
-.title-four {
-    font-family: "RyoGothicPlusN-Bold";
-    font-size: 38px;
-    line-height: 48px;
-    margin-bottom: 100%;
+@media screen and (min-width: 768px) {
+    .cover-img-pc {
+        display: block !important;
+        position: absolute;
+        z-index: -1;
+        height: 440px;
+        left: 50%;
+        object-fit: cover;
+        object-position: 65% 50%;
+        transform: translate(-50%);  
+    }
+    .cover-img-sp {
+        display: none !important;
+    }
+
+    .title {
+        max-width: 1000px;
+        padding-top: 80px;
+        font-family: "RyoGothicPlusN-Reegular";
+    }
+    .title-one {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .title-two {
+        font-size: 69px;
+        line-height: 79px;
+    }
+    .title-three {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    .title-four {
+        font-size: 38px;
+        line-height: 48px;
+    }
 }
+/* Cover Section End */
+
+/* Section Start */
+.section {
+    padding-left: 5.334vw;
+    padding-right: 5.334vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        max-width: 1000px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Section End */
+
+/* Card Section Start */
+.orange-text {
+    color: #E67F10;
+}
+.card-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+    max-width: 626px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 28px;
+    padding: 3.733333333vw;
+}
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+    margin-bottom: 4vw;
+}
+.card:last-child {
+    margin-bottom: 0;
+}
+.card-title {
+    background-color: #f47f00;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-radius: 1.333333333vw;
+    color: white;
+    text-align: center;
+    opacity: 1;
+    width: 60px;
+    width: 8vw;
+    min-width: 8vw;
+    height: 60px;
+    height: 8vw;
+    align-items: center;
+    margin-right: 10px;
+    margin-right: 1.333333333vw;
+    font-family: "DIN Bold";
+}
+
+.card-title p {
+    font-size: 14.4px;
+    font-size: 1.92vw;
+}
+
+.card-title .card-no {
+    font-size: 28.8px;
+    font-size: 3.84vw;
+}
+
+.card-content {
+    font-family: "RyoGothicPlusN-Medium";
+    font-size: 3.1vw;
+    line-height: 4.267vw;
+    color: #2b4a7e;
+}
+
+@media screen and (min-width: 768px) {
+    .card-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: row;
+        max-width: 1000px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 28px;
+        margin-top: 60px;
+        box-shadow: 2px 0 2px #00000020;
+    }
+    .card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 0;
+        width: 33.33333333%;
+        padding: 5px;
+    }
+    .card-title {
+        background-color: #f47f00;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        opacity: 1;
+        width: 100%;
+        min-width: 8vw;
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-family: "DIN Bold";
+    }
+    .card-title p {
+        font-size: 14.4px;
+        margin-right: 5px;
+    }
+    .card-title .card-no {
+        font-size: 26px;
+
+    }
+    .card-content {
+        font-family: "RyoGothicPlusN-Medium";
+        font-size: 16px;
+        line-height: 25px;
+        color: #2b4a7e;
+    }
+}
+/* Card Section End */
+
+
