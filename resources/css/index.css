@@ -29,16 +29,13 @@ p {
 .pc-item {
     display: none !important;
 }
-
-@media screen and (min-width: 768px) {
-    .pc-item {
-        display: block !important;
-    }
-}
 .sp-item {
     display: block !important;
 }
 @media screen and (min-width: 768px) {
+    .pc-item {
+        display: block !important;
+    }
     .sp-item {
         display: none !important;
     }
@@ -109,29 +106,31 @@ p {
     z-index: -1;
     width: 100%;
 }
-
 .title {
-    
     margin: auto;
     padding-top: 32px;
     padding-left: 20px;
     color: #2B4A7E;
-    font-family: "RyoGothicPlusN-Reegular";
+    
 }
 .title-one {
     font-size: 4vw;
+    font-family: "RyoGothicPlusN-Reegular";
 }
 .title-two {
     font-size: 9.2vw;
     line-height: 12vw;
+    font-family: "RyoGothicPlusN-Medium";
 }
 .title-three {
     font-size: 10.667vw;
     line-height: 10vw;
+    font-family: "RyoGothicPlusN-Bold";
 }
 .title-four {
     font-size: 5.067vw;
     line-height: 8vw;
+    font-family: "RyoGothicPlusN-Bold";
 }
 
 @media screen and (min-width: 768px) {
@@ -152,23 +151,26 @@ p {
     .title {
         max-width: 1000px;
         padding-top: 80px;
-        font-family: "RyoGothicPlusN-Reegular";
     }
     .title-one {
         font-size: 24px;
         line-height: 36px;
+        font-family: "RyoGothicPlusN-Reegular";
     }
     .title-two {
         font-size: 69px;
         line-height: 79px;
+        font-family: "RyoGothicPlusN-Medium";
     }
     .title-three {
         font-size: 80px;
         line-height: 90px;
+        font-family: "RyoGothicPlusN-Bold";
     }
     .title-four {
         font-size: 38px;
         line-height: 48px;
+        font-family: "RyoGothicPlusN-Bold";
     }
 }
 /* Cover Section End */
@@ -225,36 +227,29 @@ p {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    border-radius: 1.333333333vw;
+    border-radius: 1vw;
     color: white;
     text-align: center;
     opacity: 1;
-    width: 60px;
     width: 8vw;
     min-width: 8vw;
-    height: 60px;
     height: 8vw;
     align-items: center;
-    margin-right: 10px;
-    margin-right: 1.333333333vw;
+    margin-right: 1vw;
     font-family: "DIN Bold";
 }
 
 .card-title p {
-    font-size: 14.4px;
-    font-size: 1.92vw;
+    font-size: 1.9vw;
 }
 
 .card-title .card-no {
-    font-size: 28.8px;
-    font-size: 3.84vw;
+    font-size: 3.8vw;
 }
-
 .card-content {
     font-family: "RyoGothicPlusN-Medium";
     font-size: 3.1vw;
-    line-height: 4.267vw;
+    line-height: 4.3vw;
     color: #2b4a7e;
 }
 
@@ -277,7 +272,7 @@ p {
         display: flex;
         flex-flow: column;
         margin-bottom: 0;
-        width: 33.33333333%;
+        width: 33.34%;
         padding: 5px;
     }
     .card-title {
@@ -316,4 +311,171 @@ p {
 }
 /* Card Section End */
 
+/* Announce Section Start */
+.announce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+    margin-top: 13.334vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'RyoGothicPlusN-Medium';
+}
+.announce-text {
+    color: #008767;
+    font-size: 24px;
+    font-size: 3.2vw;
+    line-height: 36px;
+    line-height: 5.8vw;
+    text-align: left;
+}
+.announce-text::before {
+    background-image: url(../images/arrow-down-green-thick.png);
+    background-size: 15px 15px;
+    background-size: 2vw 2vw;
+    display: inline-block;
+    width: 15px;
+    width: 2vw;
+    height: 15px;
+    height: 2vw;
+    content: '';
+}
+.announce-img-sp {
+    display: block;
+    margin-top: 45px;
+    margin-top: 6vw;
+    margin-bottom: 45px;
+    margin-bottom: 6vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98.508%;
+}
+.announce-img-pc {
+    display: none !important;
+}
 
+@media screen and (min-width: 956px) {
+    .announce {
+        font-family: 'RyoGothicPlusN-Medium';
+        margin: 0;
+        text-align: center;
+    }
+    .announce-text {
+        color: #008767;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .announce-text::before {
+        background-image: url(../images/arrow-down-green-thick.png);
+        background-size: 15px 15px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+    }
+    .announce-img-pc {
+        display: block !important;
+        margin-bottom: 45px;
+        margin-top: -5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .announce-img-sp {
+        display: none !important;
+    }
+}
+/* Announce Section End */
+
+/* Insurance Section Start */
+.underline-yellow {
+    text-decoration: underline #FFE77A 10px;
+    text-underline-offset: -2px;
+}
+.insurance {
+    background-color: #F0EFEC;
+    text-align: center;
+    padding: 4.8vw;
+    border-radius: 10px;
+}
+.insurance-title {
+    color: #008767;
+    font-size: 28px;
+    font-family: 'RyoGothicPlusN-Bold';
+    line-height: 8vw;
+}
+h3 {
+    font-family: 'Yu Gothic Medium';
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 45px;
+    font-weight: normal;
+}
+.insurance-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 2px #c3bfb3;
+    margin-bottom: 50px;
+}
+.insurance-box > h3 {
+    font-weight: bold;
+    font-size: 29px;
+    margin-top: 0;
+    margin-bottom: 28px;
+    line-height: 28px;
+}
+.insurance-content{
+    font-family: 'Yu Gothic Medium';
+    text-align: left;
+    font-size: 24px;
+    line-height: 40px;
+}
+.insurance-price-box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 54px 30px;
+}
+.insurance-image{
+    width: 100%;    
+}
+.price-content{
+    color: #666;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Yu Gothic Medium';
+    margin-top: 40px;
+    line-height: 28px;
+}
+@media screen and (min-width: 956px) {
+    .insurance {
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .insurance-title {
+        color: #008767;
+        font-size: 42px;
+        line-height: 60px;
+        margin-top: 0;
+    }
+    .insurance-box > h3 {
+        font-weight: bold;
+        font-size: 26px;
+        margin-top: 0;
+        margin-bottom: 28px;
+        line-height: 26px;
+    }
+    .insurance-content {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .insurance-price-box{
+        padding: 70px 85px;
+    }
+    .price-content{
+        font-size: 16px;
+    }
+}
+/* Insurance Section End */
