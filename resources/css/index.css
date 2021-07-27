@@ -26,6 +26,9 @@ body {
 p {
     margin: 0;
 }
+img {
+    vertical-align: middle;
+}
 .pc-item {
     display: none !important;
 }
@@ -33,6 +36,7 @@ p {
     display: block !important;
 }
 @media screen and (min-width: 768px) {
+    
     .pc-item {
         display: block !important;
     }
@@ -49,7 +53,7 @@ p {
 }
 @media screen and (min-width: 768px) {
     .main {
-        margin: auto;
+        margin: 0 auto;
         max-width: 1600px;
     }
 }
@@ -64,30 +68,23 @@ p {
     -ms-flex-align: center;
     align-items: center;
     margin: 0 auto;
-    height: 14vw;
+    height: 13vw;
     max-width: 1000px;
     padding-left: 4vw;
     padding-right: 4vw;
 }
 .header-nav img {
-    height: 6vw;
+    height: 6.4vw;
 }
 
 @media screen and (min-width: 768px) {
     .header-nav {
-        display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin: 0 auto;
         height: 100px;
-        max-width: 1000px;
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
     .header-nav img {
         height: 34px;
-        width: 126px;
     }
 }
 /* Header Section End */
@@ -108,10 +105,11 @@ p {
 }
 .title {
     margin: auto;
-    padding-top: 32px;
-    padding-left: 20px;
+    padding-left: 5.334vw;
+    padding-right: 5.334vw;
+    padding-top: 7.5vw;
     color: #2B4A7E;
-    
+    text-shadow: 1px 0 0 #d5e2db;
 }
 .title-one {
     font-size: 4vw;
@@ -123,14 +121,20 @@ p {
     font-family: "RyoGothicPlusN-Medium";
 }
 .title-three {
-    font-size: 10.667vw;
-    line-height: 10vw;
+    font-size: 10.6vw;
+    line-height: 12.1vw;
     font-family: "RyoGothicPlusN-Bold";
 }
 .title-four {
     font-size: 5.067vw;
-    line-height: 8vw;
+    line-height: 6.5vw;
     font-family: "RyoGothicPlusN-Bold";
+}
+
+@media screen and (min-width: 1024px){
+    .cover-img-pc {
+        left: 50% !important;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -139,9 +143,7 @@ p {
         position: absolute;
         z-index: -1;
         height: 440px;
-        left: 50%;
-        object-fit: cover;
-        object-position: 65% 50%;
+        left: 35%;
         transform: translate(-50%);  
     }
     .cover-img-sp {
@@ -151,11 +153,15 @@ p {
     .title {
         max-width: 1000px;
         padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
     }
     .title-one {
         font-size: 24px;
         line-height: 36px;
         font-family: "RyoGothicPlusN-Reegular";
+        
     }
     .title-two {
         font-size: 69px;
@@ -199,8 +205,7 @@ p {
     color: #E67F10;
 }
 .card-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     flex-flow: column;
     max-width: 626px;
@@ -210,8 +215,7 @@ p {
     padding: 3.733333333vw;
 }
 .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
+
     display: flex;
     margin-bottom: 30px;
     margin-bottom: 4vw;
@@ -221,8 +225,6 @@ p {
 }
 .card-title {
     background-color: #f47f00;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -234,7 +236,6 @@ p {
     width: 8vw;
     min-width: 8vw;
     height: 8vw;
-    align-items: center;
     margin-right: 1vw;
     font-family: "DIN Bold";
 }
@@ -255,8 +256,6 @@ p {
 
 @media screen and (min-width: 768px) {
     .card-section {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         flex-flow: row;
         max-width: 1000px;
@@ -267,8 +266,6 @@ p {
         box-shadow: 2px 0 2px #00000020;
     }
     .card {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         flex-flow: column;
         margin-bottom: 0;
@@ -277,8 +274,6 @@ p {
     }
     .card-title {
         background-color: #f47f00;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         flex-flow: row;
         justify-content: center;
@@ -313,8 +308,6 @@ p {
 
 /* Announce Section Start */
 .announce {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 100px;
     margin-top: 13.334vw;
@@ -399,32 +392,38 @@ p {
     text-align: center;
     padding: 4.8vw;
     border-radius: 10px;
+    margin-bottom: 6.4vw;
 }
 .insurance-title {
     color: #008767;
     font-size: 28px;
+    font-size: 5.4vw;
     font-family: 'RyoGothicPlusN-Bold';
     line-height: 8vw;
+    margin-top: 0;
+    margin-bottom: 25px;
 }
-h3 {
+.insurance > h3 {
     font-family: 'Yu Gothic Medium';
-    font-size: 30px;
-    line-height: 45px;
-    margin-bottom: 45px;
+    font-size: 4vw;
+    line-height: 6vw;
+    margin-bottom: 6vw;
     font-weight: normal;
 }
 .insurance-box {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    border: solid 2px #c3bfb3;
-    margin-bottom: 50px;
+    border: solid 0.26vw #c3bfb3;
+    padding: 4vw;
+    border-radius: 1.3vw;
+    margin-bottom: 5vw;
 }
 .insurance-box > h3 {
     font-weight: bold;
     font-size: 29px;
+    font-size: 3.7vw;
     margin-top: 0;
     margin-bottom: 28px;
+    margin-bottom: 3.7vw;
     line-height: 28px;
 }
 .insurance-content{
@@ -432,6 +431,8 @@ h3 {
     text-align: left;
     font-size: 24px;
     line-height: 40px;
+    font-size: 3.2vw;
+    line-height: 5.4vw;
 }
 .insurance-price-box{
     background-color: #fff;
@@ -460,9 +461,19 @@ h3 {
         line-height: 60px;
         margin-top: 0;
     }
+    .insurance-box {
+        border: solid 2px #c3bfb3;
+        padding: 30px;
+        border-radius: 10px;   
+        margin-bottom: 50px;
+    }
+    .insurance > h3 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 45px;
+    }
     .insurance-box > h3 {
-        font-weight: bold;
-        font-size: 26px;
+        font-size: 24px;
         margin-top: 0;
         margin-bottom: 28px;
         line-height: 26px;
@@ -479,3 +490,366 @@ h3 {
     }
 }
 /* Insurance Section End */
+
+/* Break Section Start */
+.section {
+    padding-bottom: -9px;
+}
+.break-section {
+    background-image: url(../images/bg_sec_ttl_sp.png);
+    height: 22vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.break-section > h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'RyoGothicPlusN-Bold';
+    font-size: 5.4vw;
+    line-height: 8.3vw;
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding-bottom: 26px;
+    }
+    .break-section {
+        background-image: url(../images/bg_sec_ttl_pc.png);
+        height: 130px;
+    }
+    .break-section > h1 {
+        font-size: 30px;
+    }
+}
+/* Break Section End */
+
+/* Point 1 Section Start */
+.point-section {
+    background-color: #e4eeff;
+    border-radius: 10px;
+    margin-top: 12vw;
+    margin-bottom: 5.3vw;
+    padding-bottom: 6.4vw;
+}
+.point-header {
+    background-color: #2B4A7E;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    position: relative;
+}
+.point-no {
+    color: #fff;
+    font-family: 'DIN Bold';
+    background-color: #ff8080;
+    border-radius: 50%;
+    width: 15.3vw;
+    height: 15.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+    font-size: 5.6vw;
+    border: solid 0.4vw #fff;
+    position: absolute;
+    transform: translateY(-80%);
+}
+.point-title {
+    
+    color: #fff;
+    font-family: 'Yu Gothic Medium';
+    font-size: 4.5vw;
+    font-weight: normal;
+    line-height: 6.4vw;
+    
+    
+}
+.point-toggle {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 87%;
+}
+.toggle-content {
+    border-bottom: 1px dashed #E1DDD7 !important;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    margin-top: 6.7vw;
+    padding: 4.7vw;
+}
+.toggle-title {
+    font-family: 'Yu Gothic Medium';
+    font-size: 4vw;
+    font-weight: normal;
+    line-height: 5.6vw;
+    margin: 0;
+}
+.toggle-arrow {
+    right: 24px;
+    right: 3.2vw;
+    position: absolute;
+    top: 32%;
+    width: 40px;
+    width: 5.3vw;
+    height: 40px;
+    height: 5.3vw;
+}
+.toggle-arrow img {
+    width: 100%;
+}
+.point-diagram {
+    padding: 40px 0;
+    width: 100%;
+}
+.toggle-content-2 {
+    padding: 5.3vw 0;
+}
+.toggle-box {
+    margin: auto;
+}
+.toggle-box-header {
+    color: #fff;
+    font-family: 'Yu Gothic Medium';
+    font-size: 4vw;
+    height: 8vw;
+    background-color: #808080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-box-content {
+    font-family: 'Yu Gothic Medium';
+    text-align: left;
+    font-size: 21px;
+    font-size: 2.8vw;
+    line-height: 32px;
+    line-height: 4.3vw;
+    margin-top: 28px;
+    margin-top: 3.7vw;
+}
+.toggle-content-2 > h1 {
+    font-weight: normal;
+    font-family: 'Yu Gothic Medium';
+    font-size: 4vw;
+    line-height: 5.6vw;
+    margin-top: 5.3vw;
+    margin-bottom: 0;
+    text-align: center;
+}
+.point-table-pc {
+    display: none;
+}
+.point-table-sp {
+    display: block;
+    padding: 5.3vw 0;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .point-section {
+        margin-top: 65px;
+        margin-bottom: 34px;
+        padding-bottom: 40px;
+    }
+    .point-header {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .point-no {
+        width: 96px;
+        height: 96px;
+        transform: translateY(-85%);
+        left: 20px;
+        font-size: 36px;
+        border: solid 3px #fff;
+    }
+    .point-title {
+        font-size: 34px;
+        line-height: 48px;
+        padding: 0 125px;
+    }
+    .point-toggle {
+        padding-bottom: 0;
+        width: 90%;
+    }
+    .toggle-content {
+        padding: 35px;
+        margin-top: 50px;
+    }
+    .toggle-title {
+        font-size: 30px;
+        line-height: 42px;
+        margin: 0;
+    }
+    .toggle-arrow {
+        right: 24px;
+        position: absolute;
+        top: 32%;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    .toggle-content-2 {
+        padding: 40px 0;
+    }
+    .toggle-arrow img {
+        width: 100%;
+    }
+    .point-table-pc {
+        padding: 40px 0;
+        width: 100%;
+    }
+    .toggle-box {
+        display: flex;
+    }
+    .toggle-box-header {
+        font-size: 18px;
+        height: 60px;
+        width: 79%;
+        min-width: 210px;
+    }
+    .toggle-box-content {
+        font-size: 12px;
+        line-height: 20px;
+        margin: 0;
+        padding-left: 20px;
+    }
+    .toggle-content-2 > h1 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
+/* Point 1 Section End */
+
+/* Point 2 Section Start */
+.point2-pc-image {
+    padding: 55px 0;
+}
+.point-sub-title {
+    background-color: #E4EEFF;
+    font-family: "Yu Gothic Medium";
+    font-size: 3.8vw;
+    font-weight: normal;
+    line-height: 5.6vw;
+    margin: 0;
+    padding: 6.4vw 0;
+    text-align: center;
+    width: 100%;
+}
+.point-footer {
+    padding: 4vw 0;
+}
+.footer-content {
+    display: flex;
+    font-family: 'Yu Gothic Medium';
+    padding-bottom: 4vw;
+}
+.footer-tittle {
+    margin-right: 9.3px;
+    margin-right: 1.24vw;
+    font-size: 22px;
+    font-size: 2.933333333vw;
+    line-height: 27px;
+    line-height: 3.6vw;
+}
+.footer-text {
+    font-size: 2.75vw;
+    line-height: 3.6vw;
+}
+
+@media screen and (min-width: 768px) {
+    .point-sub-title {
+        font-size: 24px;
+        line-height: 42px;
+        padding: 48px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+/* Point 2 Section End */
+
+/* Point 3 Section Start */
+.point-3-content-top{
+    font-family: 'RyoGothicPlusN-Reegular';
+    padding-top: 4.8vw;
+    text-align: center;
+}
+.point-3-content-bottom {
+    font-family: 'Yu Gothic Medium';
+    color: #666666;
+    text-align: left;
+    font-size: 2.3vw;
+    margin-top: 3.3vw;
+    line-height: 4vw;
+    padding-bottom: 4.5vw;
+    padding-top: 3vw;
+    display: inline-block;
+}
+.point-3-content-top-right > .text {
+    font-weight: normal;
+    font-size: 3.7vw;
+    line-height: 5.4vw;
+    margin: 0;
+}
+.point-3-content-top-right > .text-no {
+    font-size: 5.9vw;
+    font-weight: normal;
+    line-height: 10vw;
+    color: red;
+    margin: 0;
+}
+.point-3-content-top-left {
+    font-family: 'Yu Gothic Medium';
+    font-size: 2.3vw;
+    line-height: 5vw;
+    padding: 3.3vw;
+    background-color: #EAEAEA;
+    text-align: left;
+    margin-top: 3.4vw;
+    width: auto;
+}
+.point-3-content-top-left > .text-2 {
+    font-size: 2.5vw;
+}
+
+@media screen and (min-width: 768px) {
+    .point-3-content-top{
+        padding-top: 36px;
+        display: flex;
+    }
+    .point-3-content-bottom {
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 0;
+        padding-bottom: 45px;
+    }
+    .point-3-content-top-right {
+        width: 50%;
+    }
+    .point-3-content-top-right > .text {
+        font-size: 24px;
+        line-height: 42px;
+    }
+    .point-3-content-top-right > .text-no {
+        font-size: 44px;
+        line-height: 77px;
+    }
+    .point-3-content-top-left {
+        width: 50%;
+        height: 75%;
+        font-size: 14px;
+        line-height: 28px;
+        margin  : 0;
+        padding: 27px;
+    }
+    .point-3-content-top-left > .text-2 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+/* Point 3 Section End */

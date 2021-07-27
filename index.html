@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./resources/css/index.css" type="text/css">
         
         <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="./resources/js/index.js"></script>
     </head>
 
@@ -20,8 +21,15 @@
 
             <!-- Cover -->
             <div class="cover">
-                <img class="cover-img-pc pc-item" src="./resources/images/img_cover_pc.jpg" alt="cover">
-                <img class="cover-img-sp sp-item" src="./resources/images/img_cover_sp.jpg" alt="cover">
+                <img 
+                    class="cover-img-pc" 
+                    src="./resources/images/img_cover_pc.jpg" 
+                    alt="cover">
+                <img 
+                    class="cover-img-sp" 
+                    src="./resources/images/img_cover_sp.jpg" 
+                    alt="cover" 
+                    style="display: none;">
                 <div class="title">
                     <p class="title-one">金融・保険のプロと老後を考える</p>
                     <p class="title-two">ソニー生命の</p>
@@ -30,7 +38,7 @@
                 </div>
             </div>
             
-            <!-- Point Card Section -->
+            <!-- First Category Section -->
             <div class="section">
                 <div class="card-section">
                     <div class="card">
@@ -40,13 +48,13 @@
                         </div>
                         <div class="card-content">
                             <p>
-                                特別勘定の資産の<span class="orange-text">運用実績に応じて、</span><br>
-                                年金額・解約返戻金額が<span class="orange-text">変動します。</span>
+                                特別勘定の資産の<span class="orange-text">
+                                運用実績に応じて、</span><br>
+                                年金額・解約返戻金額が<span class="orange-text">
+                                変動します。</span>
                             </p>
                         </div>
                     </div>
-             
-               
                     <div class="card">
                         <div class="card-title">
                             <p>POINT</p>
@@ -59,16 +67,15 @@
                             </p>
                         </div>
                     </div>                  
-                
-               
                     <div class="card">
                         <div class="card-title">
                             <p>POINT</p>
                             <span class="card-no">3</span>
                         </div>
                         <div class="card-content">
-                            <p>高度障害状態・身体障害の状態になられ <br class="pc-item">
-                                たときは、以後の<span class="orange-text">保険料のお払い込みは<br class="pc-item">不要です。</span>
+                            <p>高度障害状態・身体障害の状態になられ<br class="pc-item">
+                                たときは、以後の<span class="orange-text">
+                                保険料のお払い込みは<br class="pc-item">不要です。</span>
                             </p>
                         </div>
                     </div>                   
@@ -77,20 +84,25 @@
                  <!-- Announce Section  -->
                 <div class="announce">
                     <a href="#" class="announce-text">
-                        新型コロナウイルスへの感染予防対策を踏まえた<br class="sp-item"> ソニー生命の対応について
+                        新型コロナウイルスへの感染予防対策を踏まえた<br class="sp-item">
+                        ソニー生命の対応について
                     </a>
                 </div>
-        
-                    <img class="announce-img-pc" src="./resources/images/img_announce_pc.png" alt>
-                    <img class="announce-img-sp" src="./resources/images/img_announce_sp.png" alt>
+                    <img 
+                        class="announce-img-pc" 
+                        src="./resources/images/img_announce_pc.png">
+                    <img 
+                        class="announce-img-sp" 
+                        src="./resources/images/img_announce_sp.png">
               
-
                 <!-- Insurance Section -->
                 <div class="insurance">
                     <h1 class="insurance-title">
                         将来の計画や夢を実現しながら <br>
                         ゆとりある老後を過ごすために <br>
-                        今のうちから<br class="sp-item"><span class="underline-yellow">｢準備｣</span>を始めませんか。
+                        今のうちから<br class="sp-item">
+                        <span class="underline-yellow">｢準備｣</span>
+                        を始めませんか。
                     </h1>
                     <h3>老後の必要資金準備のための <br>
                         生存保障に重点を置いた年金保険です。</h3>
@@ -102,8 +114,12 @@
                             的にご準備いただけます。</p>
                     </div>
                     <div class="insurance-price-box">
-                        <img class="insurance-image pc-item" src="./resources/images/img_about_pc.png" alt="insurance-price-pc">
-                        <img class="insurance-image sp-item" src="./resources/images/img_about_sp.png" alt="insurance-price-pc">
+                        <img 
+                            class="insurance-image pc-item" 
+                            src="./resources/images/img_about_pc.png">
+                        <img 
+                            class="insurance-image sp-item" 
+                            src="./resources/images/img_about_sp.png">
                         <div class="price-content">
                             <p>※1. 出典：公益財団法人生命保険文化センター「令和元年 <br class="sp-item">
                                 度 生活保障に関する調査」</p>
@@ -112,9 +128,269 @@
                         </div>
                     </div>
                 </div>
+                <!-- Break Section -->
+                <div class="break-section">
+                    <h1>変額個人年金で<br class="sp-item">
+                        老後資金つくりをする理由</h1>
+                </div>
             </div>
 
-           <div></div>
+            <!-- Point Category Section -->
+            <!-- Point 1 Section -->
+            <div class="section">
+                <section class="point-section">
+                    <!-- Point 1 Header -->
+                    <div class="point-header">
+                        <div class="point-no">
+                            <p>1</p>
+                        </div>
+                        <h1 class="point-title">
+                            資産の運用実績に基づき、<br>
+                            年金額が変動(増減)する年金保険
+                        </h1>
+                    </div>
+
+                    <!-- Point 1 Content: Toggle 1 -->
+                    <div class="point-toggle" id="toggle-1">
+                        <div class="toggle-content">
+                            <h1 class="toggle-title">仕組み図</h1>
+                            <div class="toggle-arrow">
+                                <img 
+                                    id="arrow-btn-1"
+                                    src="./resources/images/img_circle_arrow_down.png" >
+                            </div>
+                        </div>
+                        <!-- Content Toggle 1 -->
+                        <div 
+                            class="point-toggle" 
+                            id="content-1" 
+                            style="display: none;">
+                            <img 
+                                class="point-diagram pc-item" 
+                                src="./resources/images/img_point1_diagram_pc.png">
+                            <img 
+                                class="point-diagram sp-item" 
+                                src="./resources/images/img_point1_diagram_sp.png">
+                        </div>
+                    </div>
+
+                    <!-- Point 1 Content: Toggle 2 -->
+                    <div class="point-toggle" id="toggle-2">
+                        <div class="toggle-content">
+                            <h1 class="toggle-title">ご契約例</h1>
+                            <div class="toggle-arrow">
+                                <img 
+                                    src="./resources/images/img_circle_arrow_down.png" 
+                                    id="arrow-btn-2">
+                            </div>
+                        </div>
+                        <!-- Content Toggle 2 -->
+                        <div class="point-toggle" id="content-2" style="display: none;">
+                            <div class="toggle-content-2">
+                                <div class="toggle-box">
+                                    <div class="toggle-box-header">
+                                        <p>ご契約例(月払の場合)</p>
+                                    </div>
+                                    <p class="toggle-box-content">
+                                        ●被保険者：35歳 ●基本年金額：100万円 ●年金種類：確定年金 
+                                        ●年金支払期間：10年 ●年金支払開始年齢：60歳 ●保険料払込期間：60歳まで 
+                                        ●個別扱月払保険料　男性：20,550円　女性：<br class="sp-item"> 20,490円
+                                    </p>
+                                </div>
+                                <h1>
+                                    特別勘定の資産の<br class="sp-item">
+                                    運用実績例表(ご契約の場合)
+                                </h1>
+                                <img 
+                                    class="point-table-pc pc-item" 
+                                    src="./resources/images/img_point1_table_pc.png">
+                                <img 
+                                    class="point-table-sp sp-item" 
+                                    src="./resources/images/img_point1_table_sp.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Point 2 Section -->
+            <div class="section">
+                <section class="point-section">
+                    <!-- Point 2 Header -->
+                    <div class="point-header">
+                        <div class="point-no">
+                            <p>2</p>
+                        </div>
+                        <h1 class="point-title">
+                            運用対象として<br class="sp-item">８つの特別勘定があります。
+                        </h1>
+                    </div>
+                    <h2 class="point-sub-title">
+                        特別勘定とは、変額保険と<br class="sp-item">
+                        変額個人年金保険にかかる資産を<br>
+                        他の保険種類の資産と区分し、<br class="sp-item">
+                        独立して管理・運用を行う勘定のことです。
+                        <br><br>
+                        ソニー生命では運用方針の異なる<br class="sp-item">
+                        8つの特別勘定の中から運用対象として<br class="sp-item">
+                        １つないし <br class="pc-item">
+                        複数の特別勘定を<br class="sp-item">
+                        お選びいただけます。
+                    </h2>
+                   
+                    <!-- Point 2 Content -->
+                    <div class="point-toggle" id="toggle-3"> 
+                        <div class="toggle-content" style="margin: 0;">
+                            <h1 class="toggle-title">運用方針が異なる8つの特別勘定</h1>
+                            <div class="toggle-arrow">
+                                <img 
+                                    class="pc-item"
+                                    id="arrow-btn-3"
+                                    src="./resources/images/img_circle_arrow_down.png" >
+                            </div>
+                        </div>
+            
+                        <!-- PC Content: Toggle 3-->
+                        <div class="pc-item"> 
+                            <div 
+                                class="point-toggle" 
+                                id="content-3" 
+                                style="display: none;">
+                                <img 
+                                    class="point2-pc-image" 
+                                    src="./resources/images/img_point2.png">
+                            </div>
+                        </div>
+                        
+
+                        <!-- SP Content: Toggle 4 to Toggle 11 -->
+                        <div class="point-toggle sp-item" >
+                            <!-- ------------------------------------------------ -->
+                        
+                        <!-- Footer Content of Point 2 -->
+                        <div class="point-footer sp-item">
+                            <div class="footer-content">
+                                <p class="footer-tittle">※1</p>
+                                <p class="footer-text">上記運用方針に基づき運用を行うため、国内株式の価格変動な
+                                    どにより積立金に損失が生じるおそれがあります。</p>
+                            </div>
+                            <div class="footer-content">
+                                <p class="footer-tittle">※2</p>
+                                <p class="footer-text">上記運用方針に基づき運用を行うため、日本を含む世界各国の
+                                    株式の価格変動、外国為替レートの変動などにより積立金に損
+                                    失が生じるおそれがあります。</p>
+                            </div>
+                            <div class="footer-content">
+                                <p class="footer-tittle">※3</p>
+                                <p class="footer-text">上記運用方針に基づき運用を行うため、国内の金利の変動、
+                                    債券発行体の財務状況の変化などにより積立金に損失が生
+                                    じるおそれがあります。</p>
+                            </div>
+                            <div class="footer-content">
+                                <p class="footer-tittle">※4</p>
+                                <p class="footer-text">上記運用方針に基づき運用を行うため、日本および世界各国の金利
+                                    の変動、債券発行体の財務状況の変化、外国為替レー
+                                    トの変動などにより積立金に損失が生じるおそれがあります。</p>
+                            </div>
+                            <div class="footer-content">
+                                <p class="footer-tittle">※5</p>
+                                <p class="footer-text">上記運用方針に基づき運用を行うため、国内の金利の変動、
+                                    債券発行体の財務状況の変化、国内株式の価格変動などに
+                                    より積立金に損失が生じるおそれがあります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Break Point Section -->
+            <div class="section">
+                <img 
+                    class="pc-item"
+                    src="./resources/images/img_banner_pc.png">
+                <img 
+                    class="sp-item"
+                    src="./resources/images/img_banner_sp.png"
+                    style="width: 100%;">
+            </div>
+
+            <!-- Point 3 Section -->
+            <div class="section">
+                <section class="point-section">
+                    <!-- Point 3 Header -->
+                    <div class="point-header">
+                        <div class="point-no">
+                            <p>3</p>
+                        </div>
+                        <h1 class="point-title">
+                            経営の健全性維持を<br class="sp-item">
+                            重視するソニー生命の<br>
+                            個人年金保険です。
+                        </h1>
+                    </div>
+                    <h2 class="point-sub-title">
+                        個人年金保険は将来に関わる保障です。<br>
+                        契約してから年金の受け取り完了まで<br class="sp-item">
+                        長期にわたる保険になりますので、<br>
+                        保険会社の安全性はとても重要です。
+                    </h2>
+
+                    
+                    <!-- Point 3 Content: Toggle 12 -->
+                    <div class="point-toggle" id="toggle-12">
+                        <div class="toggle-content"  style="margin: 0;">
+                            <h1 class="toggle-title">保険会社の健全性を示す指標</h1>
+                            <div class="toggle-arrow">
+                                <img 
+                                    id="arrow-btn-12"
+                                    src="./resources/images/img_circle_arrow_down.png" >
+                            </div>
+                        </div>
+                        <!-- Content Toggle 12 -->
+                        <div 
+                            class="point-toggle" 
+                            id="content-12" 
+                            style="display: none;">
+                            <div class="point-3-content-top">                        
+                                <div class="point-3-content-top-right">
+                                    <h3 class="text">2019年度末の <br>
+                                        ソルベンシー・マージン比率は
+                                    </h3>
+                                    <h1 class="text-no">2,476.3％</h1>
+                                    <h3 class="text">と、高い水準を確保しています。</h3>
+                                </div>
+                                <div class="point-3-content-top-left">
+                                    <p class="text-2">
+                                        ソルベンシー・マージン＝[支払余力]
+                                    </p>
+                                    <p>
+                                        大震災や株の大暴落など、通常の予測を超えて発生
+                                        するリスクに対して、どれくらい余力を持ってい
+                                        るか判断するための行政監督上の指標のひとつです
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="point-3-content-bottom">
+                                <p>
+                                    ※ソルベンシー・マージン比率はソルベンシー・マージン
+                                    総額(1,412,772百万円)÷リスクの合計額(114,101百万円)
+                                    の1/2×100で算出したものです。<br>
+                                    ※上記は、保険業法施行規則第86条、第87条、平成8年大蔵
+                                    省告示第50号の規定に基づいて算出しております。最低保証
+                                    リスク相当額は標準的方式を用いて算出しています。なお、
+                                    平成22年内閣府令第23号、平成22年金融庁告示第48号により、
+                                    ソルベンシー・マージン総額およびリスクの合計額の算出基
+                                    準について一部変更(マージン算入の厳格化、リスク計測の
+                                    厳格化・精緻化等)がなされております。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </section>
+            </div>
         </div>
     </body>
 </html> 
